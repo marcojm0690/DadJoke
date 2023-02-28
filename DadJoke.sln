@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "DadJokeUI", "DadJokeUI\DadJokeUI.esproj", "{F34DE23F-5634-43A7-90C4-DDFB203FCB50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DadJokeAPI", "DadJokeAPI\DadJokeAPI.csproj", "{2514D04E-9216-49D8-99EA-A83CFA16ABFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F34DE23F-5634-43A7-90C4-DDFB203FCB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34DE23F-5634-43A7-90C4-DDFB203FCB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34DE23F-5634-43A7-90C4-DDFB203FCB50}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F34DE23F-5634-43A7-90C4-DDFB203FCB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34DE23F-5634-43A7-90C4-DDFB203FCB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34DE23F-5634-43A7-90C4-DDFB203FCB50}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2514D04E-9216-49D8-99EA-A83CFA16ABFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2514D04E-9216-49D8-99EA-A83CFA16ABFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2514D04E-9216-49D8-99EA-A83CFA16ABFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2514D04E-9216-49D8-99EA-A83CFA16ABFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02417866-755D-49E7-9793-72922444D30F}
+	EndGlobalSection
+EndGlobal
