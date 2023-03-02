@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DadJokeAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class JokeCountController : ControllerBase
     {
@@ -20,12 +20,10 @@ namespace DadJokeAPI.Controllers
         }
 
         [HttpGet(Name = "GetCount")]
-        public int GetCount(int id)
+        public int GetCount()
         {
-
-            var dadjoke = connectAPIService.ReturnCount();
-
-            return dadjoke.Result;
+            var count = connectAPIService.ReturnCount();
+            return count.Result;
         }
     }
 }

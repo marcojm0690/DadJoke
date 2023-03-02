@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "body": [
+    {
+      "_id": "60dd36f9a9887f15db32f398",
+      "setup": "On pride month, the trans man spoke about how free he felt after his surgery.",
+      "punchline": "It was like a huge weight off his chest.",
+      "type": "month",
+      "likes": [],
+      "author": {
+        "name": "unknown",
+        "id": null
+      },
+      "approved": true,
+      "date": 1618108661,
+      "NSFW": true,
+      "shareableLink": "https://dadjokes.io/joke/60dd36f9a9887f15db32f398"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 using DadJokeAPI.Helper;
 using DadJokeAPI.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DadJokeAPI.Controllers
@@ -18,7 +19,7 @@ namespace DadJokeAPI.Controllers
             _config = config;
             connectAPIService = new ConnectAPIService(_config);
         }
-
+        [EnableCors]
         [HttpGet(Name = "GetDadJoke")]
         public DadJoke Get()
         {

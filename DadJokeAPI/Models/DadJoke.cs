@@ -1,27 +1,47 @@
-﻿namespace DadJokeAPI.Models
+﻿using System.Text.Json.Serialization;
+
+namespace DadJokeAPI.Models
 {
+    // Root myDeserializedClass = JsonSerializer.Deserialize<Root>(myJsonResponse);
     public class Author
     {
-        public string name { get; set; }
-        public object id { get; set; }
-    }
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
 
-    public class Body
-    {
-        public string _id { get; set; }
-        public string setup { get; set; }
-        public string punchline { get; set; }
-        public string type { get; set; }
-        public Author? author { get; set; }
-        public bool approved { get; set; }
-        public int date { get; set; }
-        public bool NSFW { get; set; }
-        public string? shareableLink { get; set; }
+        [JsonPropertyName("id")]
+        public object Id { get; set; }
     }
 
     public class DadJoke
     {
-        public List<Body> body { get; set; }
-    }
+        [JsonPropertyName("_id")]
+        public string Id { get; set; }
 
+        [JsonPropertyName("setup")]
+        public string Setup { get; set; }
+
+        [JsonPropertyName("punchline")]
+        public string Punchline { get; set; }
+
+        [JsonPropertyName("type")]
+        public string Type { get; set; }
+
+        [JsonPropertyName("likes")]
+        public List<object> Likes { get; set; }
+
+        [JsonPropertyName("author")]
+        public Author Author { get; set; }
+
+        [JsonPropertyName("approved")]
+        public bool? Approved { get; set; }
+
+        [JsonPropertyName("date")]
+        public int? Date { get; set; }
+
+        [JsonPropertyName("NSFW")]
+        public bool? NSFW { get; set; }
+
+        [JsonPropertyName("shareableLink")]
+        public string ShareableLink { get; set; }
+    }
 }
